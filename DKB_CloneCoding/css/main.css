@@ -17,8 +17,183 @@ body{
     text-align: center;
 }
 
-div{
+.gnb{
+    width: 800px;
+    margin: 0 auto;
+}
+.gnb>ul>li{
+    padding: 0 17px;
+}
+.gnb a{
+    font-size: 20px;
+    color: #fff(255, 255, 255);
+    font-family: 나눔고딕, sans-serif;
+}
+
+.gnb>ul>li>a{
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    box-sizing: border-box;
+}
+.gnb>ul>li:hover>a{
+    border-bottom: 4px dashed red;
+}
+
+.smenu{
     position: absolute;
-    height: 500px;
-    outline: 1px dotted yellow;
+
+    height: 0;
+    overflow: hidden;
+    
+    transition: height .4s ease-out;
+
+    z-index: 1;
+
+    padding-top: 10px;
+}
+
+.smenu li{
+    float: none;
+}
+
+.smenu a{
+    line-height: 30px;
+    color: #fff;
+}
+
+.gnb>ul>li:nth-child(1):hover .smenu,
+.gnb>ul>li:nth-child(1):hover::after{
+    height: 110px;
+}
+.gnb>ul>li:nth-child(3):hover .smenu,
+.gnb>ul>li:nth-child(3):hover::after{
+    height: 150px;
+}
+.gnb>ul>li:nth-child(4):hover .smenu,
+.gnb>ul>li:nth-child(4):hover::after{
+    height: 90px;
+}
+.gnb>ul>li:nth-child(1):hover::after,
+.gnb>ul>li:nth-child(3):hover::after,
+.gnb>ul>li:nth-child(4):hover::after{
+    border-bottom: 2px solid red;
+}
+.gnb>ul>li::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* 무엇을 기준하여 100%인가?
+    부모자격이 있는 요소를 기준함! 여기서는 보이는 화면 */
+    height: 0; /* 각각의 li마다 오버시 높이값 다름 */
+    /* background-color: #fff; */
+    opacity: 1;
+    /* 상단영역의 하단보더가 1px 보이게 하기위해 
+    마진탑으로 1px 밀기( 기껏 젠틀앱솔루트 다 써놓고 top으로 밀지말자  */
+
+    margin-top: 1px;
+
+    transition: height .4s ease-out;
+}
+
+.cont{
+    min-height: 800px;
+}
+#cbx{
+    position: relative;
+    /* top위치 속성이 적용되며 margin:0 auto(마영오!)도 적용되어 가로 중앙정렬이 유지된다 */
+    top: 272px;
+    /* 원래위치로부터 400px위치 */
+    width: 90%;
+    /* height: 300px; */
+    margin: 0 auto;
+    /* 블록요소 가로중앙정렬 - 마영오! */
+    /* margin-top: 30%;
+    ->가로크기에 따라 위치가 들쑥날쑥해서 사용안함! */
+
+
+    /* outline: 10px dotted blue; */
+    /* outline: 두께 종류 색상;
+    외곽선 - 다른요소에 영향없이 외곽선을 표시함
+    박스모델의 필수 요소가 아니다!
+    요소를 표시할때 사용함!(input요소에 많이 사용) */
+
+    /* overflow: hidden; */
+    /* float처리된 자식요소의 높이값 인식을 위함! */
+}
+/* 가상요소로 부모박스 clear:both만들기 */
+#cbx::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 캐릭터박스 공통 */
+.cat{
+    width: 33%;/* 4등분 */
+    /* height: 100%; */
+
+    padding: 10px;
+    box-sizing: border-box;
+    /* 패딩때문에 박스가 커지지 않게 패딩을 내부로 포함! */
+
+    /* block박스는 옆에 다른요소가 못오므로
+    float속성으로 옆으로 흘러가게 해준다! */
+    float: left;
+    /* 나는 왼쪽있고 아래쪽요소는 오른쪽으로 흘러가라! */
+
+    /* outline: 5px dashed red; */
+
+    /* 트랜지션: 속시이지 */
+    transition: margin-top .6s ease-out;
+}
+/* 캐릭터박스에 오버시 마진탑 변경하기 */
+.cat:hover {
+    margin-top: -13%;
+}
+.ci{
+    text-align: center;
+}
+/* 캐릭터 이미지 */
+.ci > img{ /* 직계자식(>)이미지만 선택! */
+    width: 50%;
+    /* 이미지의 height는 자동(비율유지) */
+}
+
+/* .cat박스에 마우스 오버시 */
+
+/* 캐릭터 설명박스 */
+.cd {
+    height: 0px;
+    /* .cat에 오버시 250px로 변경! */
+    overflow-y: scroll;
+    /* y축 스크롤만 생겨서 넘치는 자식요소 보이기 */
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+    /* 둥근모서리: 왼위 오른위 오른아래 왼아래 (시계방향) */
+    margin-top: 15px;
+
+    /* 트랜지션: 속시이지 */
+    transition: height .6s ease-out;
+}
+/* .cat에 오버시 설명박스 */
+.cat:hover .cd {
+    height: 250px;
+}
+
+/* 캐릭터 설명 타이틀 */
+.cd h3 {
+    font-family: 'Hi Melody', cursive;
+    padding: 5px 10px 0px;
+    /* 패딩: 위 양쪽 아래 */
+}
+/* 캐릭터 설명 문단 */
+.cd p {
+    font-family: 'Hi Melody', cursive;
+    padding: 10px;
+    /* 패딩: 4방향 */
+    text-align: justify;
+    /* 양쪽정렬 */
 }
