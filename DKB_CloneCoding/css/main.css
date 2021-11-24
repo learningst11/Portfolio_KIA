@@ -9,7 +9,16 @@ html,body{
 
 body{
     background:
-    url(../images/bg_resized-.jpg) no-repeat fixed center,
-    url(../images/title.png) repeat fixed;
-    
+    url(../images/bg_resized.jpg) no-repeat fixed center,
+    url(../images/bg_building.jpg) repeat fixed;
+}
+
+#logo{
+    text-align: center;
+}
+
+div{
+    position: absolute;
+    height: 500px;
+    outline: 1px dotted yellow;
 }
