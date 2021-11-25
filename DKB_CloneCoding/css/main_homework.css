@@ -10,7 +10,7 @@ html,body{
 body{
     background:
     url(../images/bg_resized.jpg) no-repeat fixed 48% 48%,
-    url(../images/bg_building.jpg) repeat fixed;
+    url(../images/bg_building.jpg) repeat fixed ;
 }
 .scbar::-webkit-scrollbar {
     
@@ -28,6 +28,12 @@ body{
 #logo{
     margin-top: 30px;
     text-align: center;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.tvn{
+    margin-bottom: 20px;
 }
 
 .gnb{
