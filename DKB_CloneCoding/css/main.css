@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 @import url(reset.css);
+@font-face {
+    font-family: ng;
+    src: url(../fonts/NanumGothic.woff) format("woff");
+}
 
 html,body{
     margin: 0;
@@ -27,8 +31,7 @@ body{
 }
 .gnb a{
     font-size: 20px;
-    color: #fff(255, 255, 255);
-    font-family: 나눔고딕, sans-serif;
+    font-family: ng, sans-serif;
 }
 
 .gnb>ul>li>a{
