@@ -19,7 +19,7 @@ body{
 }
 
 .gnb{
-    width: 1000px;
+    width: 803px;
     margin: 0 auto;
 }
 .gnb>ul>li{
@@ -27,7 +27,6 @@ body{
 }
 .gnb a{
     font-size: 20px;
-    color: #fff(255, 255, 255);
     font-family: 나눔고딕, sans-serif;
 }
 
