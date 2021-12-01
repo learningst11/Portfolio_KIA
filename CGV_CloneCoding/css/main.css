@@ -1,16 +1,31 @@
+.part {
+    max-width: 1200px;
+    /* 확장성 있는 셋팅!
+    width:1200px로 코딩하면 작은 화면에서는
+    가로 스크롤이 생김-> 미디어쿼리를 사용하기전
+    화면에 적응하는 속성 셋팅이 필요하다! 
+    max-width: 1200px은 1200px보다 큰 화면에서
+    중앙 정렬되게 크기를 유지하다가 작아지면
+    화면에 붙어서 auto로 작동함! */
+    margin: 0 auto;
+    outline: 3px dotted yellow;
+}
+
 #top {
     position: relative;
+    /* 부모자격 - .gnb */
     height: 80px;
-    background:url(../images/wavve_bg_main.jpg) no-repeat 0 0/cover;
-    z-index: 9999;
+    box-shadow: inset 0 0 10px 5px rgb(9, 248, 236);
+    background: linear-gradient(blue, rgb(9, 248, 236));
+    z-index: 9999;  
+    /* GNB 서브메뉴 때문에 맨위로 올린다! */
+    text-align: center;
+    line-height: 2.5;
 }
 
-ul,ol{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+body{
+    background: #000;
 }
-
 ul{
     display: flex;
     /* justify-content: center; */
@@ -18,25 +33,44 @@ ul{
     bottom: 10px;
     right: 15px;
 }
-
-#cont{
-    background: url(../images/wavve_bg_main.jpg) no-repeat center/cover;
-    min-width: 1200px;
-    height: 1050px;
+#cont {
+    position: relative;
+    /* 부모자격 - 하위요소 */
+    /* height: 788px; */
+    /* 비율유지설정을 위해 height를 주지 않는다! */
+    background: url(../images/wavve_bg_main.jpg) no-repeat;
+    background-size: 100%;
+    /* 배경이미지 가로를 기준으로 비율변경! */
 
 }
-
-#info{
-    background: url(../images/wavve_bg_main.jpg) no-repeat bottom/cover;
+#info {
+    position: relative;
+    /* 부모자격 - .sns */
     height: 100px;
 }
 
-#screen {
-    position: absolute;
-    top: 44.2%;
-    left: 29.6%;
-    /* 나의 부모는? #cont */
-    width: 38.6%;
-    height: 61.6%;
-    background-color: #000;
+/* 1-1.페이지 타이틀 */
+h1.tit {
+    /* height: 100%; 
+    - 안줘도 줄간격이 높이를 만들어줌 */
+    color: aquamarine;
+    font-size: 40px;
+    line-height: 80px;
+    /* 글자 세로 중앙정렬 높이값과 같은 줄간격! */
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    /* 웹폰트 - 주아체 */
+
+    /* 그림자를 이용한 Glow효과 */
+    text-shadow: 0 0 12px rgb(30, 12, 95);
+
+    animation: titAni 1.5s ease-in infinite alternate;
 }
+
+@keyframes titAni {
+    from{
+        text-shadow: 0 0 4px rgb(2, 58, 39);
+    }
+    to{
+        text-shadow: 0 0 12px rgb(81, 252, 195);
+    }

@@ -1,0 +1,8 @@
+.rbx{
+    position: relative;
+}
+.rbx::before{
+    content: '';
+    display: block;
+    padding-top: 65%;
+}
