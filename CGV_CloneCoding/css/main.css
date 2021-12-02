@@ -1,3 +1,7 @@
+
+body{
+    background: #000;
+}
 .part {
     max-width: 1200px;
     /* 확장성 있는 셋팅!
@@ -8,10 +12,10 @@
     중앙 정렬되게 크기를 유지하다가 작아지면
     화면에 붙어서 auto로 작동함! */
     margin: 0 auto;
-    outline: 3px dotted yellow;
+    /* outline: 3px dotted yellow; */
 }
 
-#top {
+#top{
     position: relative;
     /* 부모자격 - .gnb */
     height: 80px;
@@ -21,32 +25,6 @@
     /* GNB 서브메뉴 때문에 맨위로 올린다! */
     text-align: center;
     line-height: 2.5;
-}
-
-body{
-    background: #000;
-}
-ul{
-    display: flex;
-    /* justify-content: center; */
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-}
-#cont {
-    position: relative;
-    /* 부모자격 - 하위요소 */
-    /* height: 788px; */
-    /* 비율유지설정을 위해 height를 주지 않는다! */
-    background: url(../images/wavve_bg_main.jpg) no-repeat;
-    background-size: 100%;
-    /* 배경이미지 가로를 기준으로 비율변경! */
-
-}
-#info {
-    position: relative;
-    /* 부모자격 - .sns */
-    height: 100px;
 }
 
 /* 1-1.페이지 타이틀 */
@@ -67,6 +45,129 @@ h1.tit {
     animation: titAni 1.5s ease-in infinite alternate;
 }
 
+#top>nav>ul{
+    display: flex;
+    /* justify-content: center; */
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+#cont {
+    position: relative;
+    /* 부모자격 - 하위요소 */
+    /* height: 788px; */
+    /* 비율유지설정을 위해 height를 주지 않는다! */
+    background: url(../images/wavve_bg_main.jpg) no-repeat;
+    background-size: 100%;
+    /* 배경이미지 가로를 기준으로 비율변경! */
+    background-position: 50% 50%;
+}
+
+
+.slist{
+    position: absolute;
+    top: 26%;
+    left: 45%;
+    /* 나의 부모는? .cont */
+    transform: translateX(-46%);
+    /* 자기크기의 절반만큼 반대방향(왼쪽)이동 */
+    width: 100%;
+    /* outline: 4px dashed yellow; */
+    z-index: 999999;
+}
+
+.slist ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+/* 포스터 이미지 */
+
+/* li디자인 */
+.slist ul>li {
+    position: relative;
+    /* 부모자격! */
+    width: 14.66%;
+    /* 6등분(16.66%) - 양쪽마진2% */
+    margin: 0 1%;
+
+    overflow: hidden;
+    border:5px solid white;
+    border-radius: 10%;
+}
+
+.slist img {
+    width: 100%;
+    /* 가로만 li박스에 채움!
+    세로는 자동으로 비율유지함! */
+    
+}
+
+/* 영화정보박스 */
+.stxt {
+    position: absolute;
+    /* left는 설정하지 않고 젠틀하게 처리함!
+    -> 각 li위치에 그대로 있음! */
+    top: 100%;
+    /* 아래쪽에 나가있음 */
+    /* 나의 부모는? .mlist ul>li */
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* 반투명배경 */
+
+    /* 글자셋팅 */
+    font-family: 'Cute Font', cursive;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+
+    /* 트랜지션: 속시이지 */
+    transition: top .4s ease-out;
+}
+
+.slist>ul>li:hover .stxt {
+    top: 0;
+}
+
+
+#screen {
+    position: absolute;
+    top: 42%;
+    left: 25.1%;
+    width:50%;
+    height: 45%;
+    background-color: #000;
+    border-radius: 10%;
+    box-shadow: inset 0 0 20px 20px rgb(13 75 214), 0 0 20px 20px rgb(10 88 215);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#info {
+    position: relative;
+    /* 부모자격 - .sns */
+    height: 100px;
+}
+
+
 @keyframes titAni {
     from{
         text-shadow: 0 0 4px rgb(2, 58, 39);
@@ -74,3 +175,17 @@ h1.tit {
     to{
         text-shadow: 0 0 12px rgb(81, 252, 195);
     }
+}
+
+#info{
+    position: fixed;
+    /* 부모자격 - .gnb */
+    height: 80px;
+    box-shadow: inset 0 0 10px 5px rgb(9, 248, 236);
+    background: linear-gradient(blue, rgb(9, 248, 236)); 
+    /* GNB 서브메뉴 때문에 맨위로 올린다! */
+    text-align: center;
+    line-height: 2.5;
+    bottom: 0;
+    right: 0;
+}
