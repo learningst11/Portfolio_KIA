@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAVVE PJ</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/core.css">
+    <script>
+        function goMv(code) {
+            document.getElementById("ifr").src =
+                "https://www.youtube.com/embed/" +
+                code +
+                "?autoplay=1&playsinline=1";
+        }
+    </script>
+</head>
+<body>
+    <header id="top" class="part">
+        <h1 class="tit">WAVVE 인기예능 미리보기</h1>
+        <nav class="gnb">
+            <ul class="glist">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">이용권</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cont" class="part rbx">
+        <nav class="slist">
+            <ul>
+                <li>
+                    <a href="#" onclick="goMv('OoQ15Wtpanc')">
+                        <img src="./images/s1.jpg" alt="놀면뭐하니">
+                        <ol class="stxt">
+                            <li>놀면뭐하니</li>
+                            <li>유재석</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="goMv('CyQ2v4kqQpE')">
+                        <img src="./images/s2.jpg" alt="나혼자산다">
+                        <ol class="stxt">
+                            <li>나혼자산다</li>
+                            <li>박나래,전현무,기안84</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="goMv('euM3NGgSsrA')">
+                        <img src="./images/s4.jpg" alt="미운우리새끼">
+                        <ol class="stxt">
+                            <li>미운우리새끼</li>
+                            <li>신동엽,서장훈</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="goMv('Por5NDFeytY')">
+                        <img src="./images/s3.jpg" alt="라디오스타">
+                        <ol class="stxt">
+                            <li>라디오스타</li>
+                            <li>김국진,김구라,유세윤,안영미</li>
+                        </ol>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="screen">
+            <iframe id="ifr" src="https://www.youtube.com/embed/7cPePLcf8Q8?autoplay=1&mute=1&loop=1&playlist=7cPePLcf8Q8" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer id="info" class="part">
+        <address>
+            <img src="./images/logo.png" alt="">
+            <span>콘텐츠웨이브 주식회사 대표이사 이태현<br>고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)<br>
+            사업자등록번호 220-88-38020 통신판매업 신고번호 : 제 2021-서울영등포-0585호통신판매업
+            <br>서울특별시 영등포구 여의나루로 60 포스트타워 19층 전자우편주소 : helpdesk@wavve.com
+            <br>Copyright© 콘텐츠웨이브(주) All rights reserved.</span>
+        </address>
+        <ul class="sns">
+            <li>
+                <a href="https://www.facebook.com/wavve.official/" target="_blank" title="페이스북 바로가기">
+                    <span class="ir">페이스북 바로가기</span>
+                </a>
+            </li>
+        </ul>
+    </footer>   
+</body>
+</html>
