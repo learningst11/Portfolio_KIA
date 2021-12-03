@@ -1,46 +1,31 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(core.css);
+
 
 body{
     background: #000;
 }
 .part {
     max-width: 1200px;
-    /* 확장성 있는 셋팅!
-    width:1200px로 코딩하면 작은 화면에서는
-    가로 스크롤이 생김-> 미디어쿼리를 사용하기전
-    화면에 적응하는 속성 셋팅이 필요하다! 
-    max-width: 1200px은 1200px보다 큰 화면에서
-    중앙 정렬되게 크기를 유지하다가 작아지면
-    화면에 붙어서 auto로 작동함! */
     margin: 0 auto;
-    /* outline: 3px dotted yellow; */
 }
 
 #top{
     position: relative;
-    /* 부모자격 - .gnb */
     height: 80px;
     box-shadow: inset 0 0 10px 5px rgb(9, 248, 236);
     background: linear-gradient(blue, rgb(9, 248, 236));
     z-index: 9999;  
-    /* GNB 서브메뉴 때문에 맨위로 올린다! */
     text-align: center;
 }
-
-/* 1-1.페이지 타이틀 */
 h1.tit {
-    /* height: 100%; 
-    - 안줘도 줄간격이 높이를 만들어줌 */
     color: aquamarine;
     font-size: 40px;
     line-height: 80px;
-    /* 글자 세로 중앙정렬 높이값과 같은 줄간격! */
     text-align: center;
     font-family: 'Jua', sans-serif;
-    /* 웹폰트 - 주아체 */
-
-    /* 그림자를 이용한 Glow효과 */
     text-shadow: 0 0 12px rgb(30, 12, 95);
-
     animation: titAni 1.5s ease-in infinite alternate;
 }
 
@@ -53,24 +38,18 @@ h1.tit {
     }
 }
 
-/* 1-2.전체메뉴(GNB) */
 .gnb {
     position: absolute;
     bottom: 10px;
     right: 15px;
-    /* 나의 부모는? #top */
 }
-/* 전체메뉴 하위 메뉴박스(.glist) */
 .glist{
     position: relative;
     display: flex;
     z-index: 1;
-    /* 영사기보다 위에 있어야 오버가 됨! */
 }
-/* GNB li리스트 */
 .gnb li {
     position: relative;
-    /* 부모자격 - .smenu */
     padding: 0 10px;
     padding-bottom: 5px;
     font-family: 'Jua', sans-serif;
@@ -81,12 +60,8 @@ h1.tit {
 
 #cont {
     position: relative;
-    /* 부모자격 - 하위요소 */
-    /* height: 788px; */
-    /* 비율유지설정을 위해 height를 주지 않는다! */
     background: url(../images/wavve_bg_main.jpg) no-repeat;
     background-size: 100%;
-    /* 배경이미지 가로를 기준으로 비율변경! */
     background-position: 50% 50%;
 }
 
@@ -95,11 +70,8 @@ h1.tit {
     position: absolute;
     top: 26%;
     left: 45%;
-    /* 나의 부모는? .cont */
     transform: translateX(-46%);
-    /* 자기크기의 절반만큼 반대방향(왼쪽)이동 */
     width: 100%;
-    /* outline: 4px dashed yellow; */
     z-index: 999999;
 }
 
@@ -109,14 +81,10 @@ h1.tit {
     justify-content: space-evenly;
     opacity: 0.8;
 }
-/* 포스터 이미지 */
 
-/* li디자인 */
 .slist ul>li {
     position: relative;
-    /* 부모자격! */
     width: 14.66%;
-    /* 6등분(16.66%) - 양쪽마진2% */
     margin: 0 1%;
 
     overflow: hidden;
@@ -126,32 +94,20 @@ h1.tit {
 
 .slist img {
     width: 100%;
-    /* 가로만 li박스에 채움!
-    세로는 자동으로 비율유지함! */
+
     
 }
 
-/* 영화정보박스 */
 .stxt {
     position: absolute;
-    /* left는 설정하지 않고 젠틀하게 처리함!
-    -> 각 li위치에 그대로 있음! */
     top: 100%;
-    /* 아래쪽에 나가있음 */
-    /* 나의 부모는? .mlist ul>li */
     width: 100%;
     height: 100%;
-
     background-color: rgba(0, 0, 0, 0.7);
-    /* 반투명배경 */
-
-    /* 글자셋팅 */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     line-height: 25px;
     text-align: center;
-
-    /* 트랜지션: 속시이지 */
     transition: top .4s ease-out;
     display: flex;
     flex-direction: column;
@@ -161,7 +117,6 @@ h1.tit {
 .slist>ul>li:hover .stxt {
     top: 0;
 }
-
 
 #screen {
     position: absolute;
@@ -179,7 +134,6 @@ h1.tit {
     width: 100%;
     height: 100%;
     border: none;
-    /* 기본보더 없앰 */
 }   
 
 #info{
@@ -187,21 +141,17 @@ h1.tit {
     height: 110px;
     box-shadow: inset 0 0 10px 5px rgb(60, 58, 133);
     background: linear-gradient(rgb(90, 90, 129), rgb(83, 94, 93)); 
-    /* GNB 서브메뉴 때문에 맨위로 올린다! */
 }
 #info address {
     color: #fff;
     font-style: normal;
-    /* 기본 이탤릭 없앰 */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     line-height: 22px;
-    /* 안쪽여백 */
     padding-left: 20px;
 }
 #info img {
     float: left;
-    /* 이미지는 왼쪽에 글자는 오른쪽으로 흐르게 */
     margin-right: 20px;
     padding-top: 40px;
     padding-bottom: 40px;

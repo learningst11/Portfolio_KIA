@@ -1,19 +1,15 @@
 @charset "utf-8";
-/* CGV PJ 리셋 CSS - reset.css */
 
-/* 1. 마진,패딩 없애기 */
 html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,p{
     margin: 0;
     padding: 0;
 }
 
-/* 2. a요소 리셋 */
 a {
-    color: #fff;/* 글자색 */
-    text-decoration: none;/* 밑줄 */
+    color: #fff;
+    text-decoration: none;
 }
 
-/* 3. ul,ol 리셋 */
 ul,ol{
-    list-style: none;/* 블릿/숫자제거 */
+    list-style: none;
 }

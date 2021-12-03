@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/core.css">
+    <script>
+        function goMv(code) {
+            document.getElementById("ifr").src =
+                "https://www.youtube.com/embed/" +
+                code +
+                "?autoplay=1&playsinline=1";
+        }
+    </script>
 </head>
 <body>
     <header id="top" class="part">
@@ -23,7 +31,7 @@
         <nav class="slist">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="goMv('OoQ15Wtpanc')">
                         <img src="./images/s1.jpg" alt="놀면뭐하니">
                         <ol class="stxt">
                             <li>놀면뭐하니</li>
@@ -32,7 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="goMv('CyQ2v4kqQpE')">
                         <img src="./images/s2.jpg" alt="나혼자산다">
                         <ol class="stxt">
                             <li>나혼자산다</li>
@@ -41,7 +49,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="goMv('euM3NGgSsrA')">
                         <img src="./images/s4.jpg" alt="미운우리새끼">
                         <ol class="stxt">
                             <li>미운우리새끼</li>
@@ -50,7 +58,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="goMv('Por5NDFeytY')">
                         <img src="./images/s3.jpg" alt="라디오스타">
                         <ol class="stxt">
                             <li>라디오스타</li>
@@ -61,7 +69,7 @@
             </ul>
         </nav>
         <div id="screen">
-            <iframe src="https://www.youtube.com/embed/7cPePLcf8Q8?autoplay=1&mute=1&loop=1&playlist=7cPePLcf8Q8" allow="autoplay" allowfullscreen></iframe>
+            <iframe id="ifr" src="https://www.youtube.com/embed/7cPePLcf8Q8?autoplay=1&mute=1&loop=1&playlist=7cPePLcf8Q8" allow="autoplay" allowfullscreen></iframe>
         </div>
     </main>
     <footer id="info" class="part">
