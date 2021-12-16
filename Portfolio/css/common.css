@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#top {
+    position: relative;
+    /* z-index적용위해! */
+
+    box-shadow: 0 2px 2px rgb(0 0 0 / 12%);
+    /* 
+        [ rgba 색상 표기법 2가지 스타일 ]
+        rgba(0, 0, 0, 0.12)
+        rgb(0 0 0 / 12%) -> 마지막 %는 투명도(알파값)
+    */
+    z-index: 9999;
+    /* 가장위 - 아래 #cont박스에 그림자가 덮임! */
+}
+
+.top {
+    min-height: 206px;
+    /* GNB메뉴가 좁아지면 줄바꿈해서 높이값이 늘어남!
+    그래서 최소높이로 잡아야 늘어날 수 있음! */
+}
