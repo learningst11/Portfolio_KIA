@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 보그 PJ 메인 CSS - main.css */
+
+/* 외부CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+
+/* 아웃라인 표시 */
+/* body * {
+    outline: 1px dotted #aaa;
+} */
+
+#enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#enter span{
+    display: block;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+#enter:hover span{
+    color:black
+}
+
+
+@media screen and (max-width:600px) {
+
+    /* Click Here 글자박스 */
+    #enter span {
+        font-size: 8vw;
+    }
+}
+
+/******************* 2. 메인영역 *******************/
+
+
+
