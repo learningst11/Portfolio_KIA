@@ -1,106 +1,111 @@
 @charset "utf-8";
 
-#top{
-    background-color: black;
+html{
+    outline: 1px solid red;
 }
 
-.top{
+#top {
+    background-color: black;
+    height: 71px;
+}
+
+.top {
     display: flex;
     background-color: black;
     text-align: center;
-    
+
 }
 
-#top.on{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000;
-}
 
-.logo{
-    position:absolute;
+.logo {
+    position: absolute;
     left: 50%;
     top: 1%;
-    transform:translateX(-80%) scaleX(1.2);
+    transform: translateX(-80%) scaleX(1.2);
 }
+
 .gnb {
 
-    /* 글자설정 */
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 18px;
     line-height: 40px;
-    
+    height: 0;
     padding: 10px 30px;
     margin-top: 11px;
-    
+
 }
 
-.gnb{
+.gnb {
     position: relative;
     width: 100%;
+    /* margin-bottom: 0; */
 }
-
 
 .gnb>ul {
     display: flex;
-    /* 플렉스박스 */
-    justify-content:space-evenly;
-    /* 컨텐츠 가로중앙 */
-    flex-wrap: wrap;
-    /* 좁아지면 자동줄바꿈 */
+    justify-content: space-evenly;
 }
 
-.gnb>ul>li:nth-child(3){
+.gnb>ul>li:nth-child(3) {
     margin-left: auto;
-
 }
 
-.gnb li{
-    padding: 0 45px 0 45px;
+.gnb li {
+    box-sizing: border-box;
+    padding: 0 45px 0px 45px;
+    z-index: 999999;
+
 }
 
 .sbx {
     display: flex;
     position: absolute;
-    /* top위치는 안쓰고 젠틀하게! 상위메뉴 a요소 아래위치 */
     left: 0;
-    /* 나의 부모는? .gnb */
-    width: 100%;
     height: 0;
     overflow: hidden;
-    /* 서브메뉴 숨기기
-    - 유의사항: 숨기는 박스에 위아래 패딩이 있으면
-    패딩때문에 닫히지 않는다! 패딩 디자인은 하위요소에 줄것! */
 }
 
-.sbx img{
+.sbx img {
     transform: scale(0.5);
 }
 
-.k8{transform: scaleX(-1);
+.sbx a{
+    display: inline-block;
+}
+
+.spo {
+    transform: scaleX(-1);
+}
+
+.sbx span{
+    color: white;
+    font-size: 24px;
 }
 
 .gnb>ul>li:hover .sbx {
     height: 300px;
 }
 
-#info{
+main {
+    overflow: hidden;
+}
+
+#info {
     position: relative;
     background: black;
     color: white;
     padding: 35px 0 35px 0;
 }
 
-footer{
+footer {
     position: relative;
 }
-#info{
+
+#info {
     padding-left: 50px;
 }
 
-address{
+address {
     position: absolute;
     top: -30%;
     left: 15%;
@@ -109,31 +114,32 @@ address{
     font-size: 14px;
     font-style: normal;
     justify-content: space-around;
-  }
+}
 
-  .sns{
-      display: flex;
-      position: absolute;
-      right:10%;
-      bottom:40%;
-  }
-
-  .sns a{
-      padding-right: 25px;
-  }
-.blink{
+.sns {
     display: flex;
     position: absolute;
-    bottom:-50%;
+    right: 10%;
+    bottom: 40%;
+}
+
+.sns a {
+    padding-right: 25px;
+}
+
+.blink {
+    display: flex;
+    position: absolute;
+    bottom: -50%;
     left: 20%;
     justify-content: center;
 }
-.blink li{
+
+.blink li {
     padding: 0 30px;
 }
 
-.blink a{
+.blink a {
     font-size: 14px;
     color: #747474;
 }
-
