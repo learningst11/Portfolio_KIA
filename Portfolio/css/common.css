@@ -1,9 +1,4 @@
 @charset "utf-8";
-
-html{
-    outline: 1px solid red;
-}
-
 #top {
     background-color: black;
     height: 71px;
@@ -13,7 +8,6 @@ html{
     display: flex;
     background-color: black;
     text-align: center;
-
 }
 
 
@@ -26,7 +20,6 @@ html{
 
 .gnb {
 
-    font-family: 'Nanum Gothic', sans-serif;
     font-size: 18px;
     line-height: 40px;
     height: 0;
@@ -63,10 +56,11 @@ html{
     left: 0;
     height: 0;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .sbx img {
-    transform: scale(0.5);
+    transform: scale(0.4);
 }
 
 .sbx a{
@@ -77,9 +71,19 @@ html{
     transform: scaleX(-1);
 }
 
+.sbx div{
+    position: relative;
+    top: -70px;
+    left: 0%;
+}
 .sbx span{
+    display: block;
+    position: absolute;
+    bottom:20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     color: white;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .gnb>ul>li:hover .sbx {
