@@ -14,11 +14,13 @@ section>div{
 }
 
 .pt1{
+    position: relative;
+    width: 100%;
     height: 600px;
     background-color:#fff;
 }
 
-.pt1 span{
+.mspan{
     position: relative;
     top: 30%;
     left: 25%;
@@ -30,32 +32,39 @@ section>div{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.carInforInner{display:flex; flex-direction:column; width:250px;position:absolute;top:3%;right:5%;z-index:999;text-align:center;background:#a0987e}
+.carInforInner li{width:250px;border:1px solid #d1d1d1;}
+.carInforInner li img{display:block;margin:0 auto 6px;padding-top:20px}
+.carInforInnerl li .inforTit{color:#05141f;font-size:14px}
+.carInforInner li .inforTxt{margin-top:5px;color:#05141f;font-size:20px; line-height:23px}
+
 .pt2{
-    height: 800px;
+    position: relative;
+    /* height: 800px; */
+    padding-top: 50%;
     background-image: url(../images/Sportage/the_all_new_sportage_exterior01_w.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pt2 span:nth-child(1){
-    position: relative;
-    top: 7%;
+    position: absolute;
+    top: 8%;
     left: 5%;
     font-size: 24px;
-    color: white;
 }
 
 .pt2 span:nth-child(3){
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 12%;
     left: 5%;
     font-size: 50px;
-    color: white;
 }
 
 .pt3{
     display: flex;
-    height: 300px;
+    /* height: 300px; */
 }
 
 .pt3 span, .pt4 span{
@@ -68,11 +77,12 @@ section>div{
 
 .pt4{
     display: flex;
-    height: 300px;
+    /* height: 300px; */
 }
 .cbx{
     /* outline: 1px solid red; */
     flex: 1;
+    padding-top: 22%;
 }
 
 
