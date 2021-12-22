@@ -39,7 +39,61 @@ section>div{
 .carInforInnerl li .inforTit{color:#05141f;font-size:14px}
 .carInforInner li .inforTxt{margin-top:5px;color:#05141f;font-size:20px; line-height:23px}
 
-.choice_color_wr{text-align:center}
+.choice_color{
+    position: absolute;
+    left: 12%;
+    bottom: 25%;
+    height:300px;
+}
+
+.choice_color{
+    text-align: center;
+    font-size:20px
+}
+.body_color>li{
+
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(92, 90, 90);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    font: bold 14px/50px Verdana;
+    color: #fff;
+    text-align: center;
+    margin: 30px 14px;
+}
+
+.body_color>li:nth-child(2){
+
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(94, 94, 94);
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    font: bold 14px/50px Verdana;
+    color: #fff;
+    text-align: center;
+    margin: 30px 14px;
+}
+
+.body_color>li:nth-child(3){
+
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background-color: rgb(94, 94, 94);
+    font: bold 14px/50px Verdana;
+    color: #fff;
+    text-align: center;
+    margin: 30px 14px;
+}
+
+    
+
+
+
+/* .choice_color_wr{text-align:center}
 .choice_color_wr .body_color{display:block;margin-left:300px;text-align:left}
 .choice_color_wr .wheel_color{display:none;text-align:center;margin-top:10px}
 .color_tit{font-size:16px;line-height:20px;font-family:'KiaB';color:#05141f;margin-right:50px;vertical-align:middle}
@@ -49,7 +103,7 @@ section>div{
 .choice_color .color_chip:before{position:absolute;width:100%;height:100%;border:1px solid rgba(5,20,31,0.2);border-radius:100px;box-sizing:border-box;content:''}
 .choice_color .color_chip.on{margin:0 2px 0 3px}
 .choice_color .color_chip.on:after{display:block;position:absolute;top:-3px;left:-3px;width:32px;height:32px;border:4px solid rgba(5,20,31,0.2);border-radius:100px;box-sizing:border-box;content:''}
-.color_info{font-size:16px;line-height:20px;color:rgba(5,20,31,0.6);margin-left:20px;vertical-align:middle}
+.color_info{font-size:16px;line-height:20px;color:rgba(5,20,31,0.6);margin-left:20px;vertical-align:middle} */
 
 
 .pt2{
