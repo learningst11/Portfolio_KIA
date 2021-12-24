@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
     <link rel="stylesheet" href="./css/sub3.css">
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/car360-3.js"></script>
+
 </head>
 <body>
     <!-- 1.상단영역 -->
     <div id="top">
         <header class="top ibx">
             <h1 class="logo">
-                <a href="#">
+                <a href="./index.html">
                     <img src="images/logo_w.png" alt="메인로고">
                 </a>
             </h1>
@@ -24,15 +28,15 @@
                         <a href="#">MODELS</a>
                         <div class="sbx">
                             <div>
-                                <a href="#"><img src="./images/nav/img_ev6.webp" alt="EV6서브이미지"></a>
+                                <a href="./sub1.html"><img src="./images/nav/img_ev6.webp" alt="EV6서브이미지"></a>
                                 <span>EV6</span>
                             </div>
                             <div>
-                            <a href="#"><img src="./images/nav/img_k8.webp" alt="K8서브이미지"></a>
+                            <a href="./sub2.html"><img src="./images/nav/img_k8.webp" alt="K8서브이미지"></a>
                             <span>K8</span>
                             </div>
                             <div>
-                            <a class="spo" href="#"><img src="./images/nav/img_nq_sportage.webp" alt="Sportage서브이미지"></a>
+                            <a class="spo" href="./sub3.html"><img src="./images/nav/img_nq_sportage.webp" alt="Sportage서브이미지"></a>
                             <span>Sportage</span>
                             </div>
                         </div>
@@ -48,8 +52,17 @@
     <!-- 2.메인영역 -->
             <main id="cont">
                 <section class="pt1">
-                    <span class="mspan">360VR</span>
-                    <div class="pt1-1 ibx"></div>         
+                    <div class="choice_color">
+                        <span>Color 선택</span>
+                        <ul class="body_color">
+                            <li><a class="colorSelect" id="colorWhite" href="#"></a></li>
+                            <li><a class="colorSelect" id="colorBlack" href="#"></a></li>
+                            <li><a class="colorSelect" id="colorGray" href="#"></a></li>
+                    </div>
+                    <span class="mspan">360VR</span>        
+                    <div class="pt1-1 ibx ">
+                        <div class="carbox"></div>
+                    </div>        
                     <ul class="carInforInner">
                         
                         <li class="infor1">
