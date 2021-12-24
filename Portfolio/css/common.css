@@ -150,7 +150,7 @@ address {
 .sns {
     display: flex;
     position: absolute;
-    right: 10%;
+    right: 7%;
     bottom: 40%;
 }
 
@@ -161,7 +161,7 @@ address {
 .blink {
     display: flex;
     position: absolute;
-    bottom: -50%;
+    bottom: -100%;
     left: 20%;
     justify-content: center;
 }
