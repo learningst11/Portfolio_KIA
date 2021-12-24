@@ -3,6 +3,7 @@
 @import url(./reset.css);
 @import url(./core.css);
 @import url(./common.css);
+@import url(./car360.css);
 
 section>div{
     height: 100%;
@@ -27,12 +28,6 @@ section>div{
     font-size: 20px;
     color: black;
 }
-.pt1-1{
-    background-image: url(../images/EV6/SWP_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .carInforInner{display:flex; flex-direction:column; width:250px;position:absolute;top:3%;right:5%;z-index:999;text-align:center;background:#a0987e}
 .carInforInner li{width:250px;border:1px solid #d1d1d1;}
 .carInforInner li img{display:block;margin:0 auto 6px;padding-top:20px}
@@ -96,24 +91,6 @@ section>div{
     text-align: center;
     margin: 30px 14px;
 }
-
-
-    
-
-
-
-/* .choice_color_wr{text-align:center}
-.choice_color_wr .body_color{display:block;margin-left:300px;text-align:left}
-.choice_color_wr .wheel_color{display:none;text-align:center;margin-top:10px}
-.color_tit{font-size:16px;line-height:20px;font-family:'KiaB';color:#05141f;margin-right:50px;vertical-align:middle}
-.choice_color{height:50px; margin:10px 0 0;position:absolute;bottom:5%;left:23%;z-index:9}
-.choice_color:after{content:"";clear:both;display:block}
-.choice_color .color_chip{position:relative;width:26px;height:26px;overflow:inherit}
-.choice_color .color_chip:before{position:absolute;width:100%;height:100%;border:1px solid rgba(5,20,31,0.2);border-radius:100px;box-sizing:border-box;content:''}
-.choice_color .color_chip.on{margin:0 2px 0 3px}
-.choice_color .color_chip.on:after{display:block;position:absolute;top:-3px;left:-3px;width:32px;height:32px;border:4px solid rgba(5,20,31,0.2);border-radius:100px;box-sizing:border-box;content:''}
-.color_info{font-size:16px;line-height:20px;color:rgba(5,20,31,0.6);margin-left:20px;vertical-align:middle} */
-
 
 .pt2{
     position: relative;
