@@ -17,9 +17,9 @@
         $(function () {
 
             const mytxt = [
-                "궁금한 그곳으로, 나를 Discover your world The all-new Sportage >",
-                "내일을 위한 여정의 시작, The Kia EV6>",
-                "영감은 낯선 것으로부터, The Outstanding, The Kia K8 >"
+                '<a href="sub3.html">궁금한 그곳으로, 나를 Discover your world The all-new Sportage &gt;</a>',
+                '<a href="sub1.html">내일을 위한 여정의 시작, The Kia EV6 &gt;</a>',
+                '<a href="sub2.html">영감은 낯선 것으로부터, The Outstanding, The Kia K8 &gt;</a>'
             ];
             // bxSlider 적용하기
             let mybx = $(".bxslider").bxSlider({
@@ -31,7 +31,7 @@
                 onSlideBefore:function(ele,odx,ndx){
                     // odx-이전순번, ndx다음순번
                     console.log(ndx);
-                    $("#enter span").text(mytxt[ndx]);
+                    $("#enter a").html(mytxt[ndx]);
                 }
             });
 
