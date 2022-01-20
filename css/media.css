@@ -212,12 +212,12 @@
     }
 
     address {
-        left: 30%;
+        left: 20%;
         font-size: 12px;
     }
 
     .blink{
-        left:24%;
+        left:22%;
         font-size: 11px;
         bottom: -200%;
 
@@ -358,10 +358,6 @@
         font-size: 17px;
         color: black;
         z-index: 999;
-    }
-
-    #info {
-        height: 32px;
     }
 
     address {
