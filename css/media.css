@@ -23,14 +23,6 @@
     font-size: 14px;
 }
 
-address>span{
-    font-size: 12px;
-}
-
-.blink>li>a{
-        font-size: 12px;
-}
-
 .info img{
     width: 85px;
 }
@@ -104,6 +96,10 @@ address>span{
     font-size: 12px;
 }
 
+address{
+    left: 30%;
+}
+
 .inforTit{
     color:#05141f;
     font-size:13px
@@ -113,11 +109,11 @@ address>span{
     margin-top:5px;
     color:#05141f;
     font-size:16px;
-    line-height:23px
+    line-height:23px;
 }
 
-address{
-left: 20%;
+.blink{
+    left: 27%;
 }
 .blink li {
     padding: 0 20px;
@@ -143,25 +139,13 @@ left: 20%;
     font-size: 10px;
 }
 
-address{
-    left: 10%;
-    word-break:keep-all;
-}
-address>span{
-    font-size: 10px;
-}
-
 .blink li{
     padding: 0px 20px;
 }
 
-.blink>li>a{
-    font-size: 10px;
-}
 
 .info img{
     width: 70px;
-    transform: translateX(-60%);
 }
 
 
@@ -208,7 +192,7 @@ address>span{
 }
 
 address{
-    left: 20%;
+    left: 28%;
     }
     .blink li {
         padding: 0 12px;
@@ -218,6 +202,18 @@ address{
     right: 2%;
     bottom: -24%;
 }
+.sns{
+    display: flex;
+    flex-direction: column;
+    bottom:-250%;
+    text-align: center;
+    }
+
+    .sns li{
+        height: 25px;
+    }
+    
+
 }
 
 @media only screen and (max-width:500px) {
@@ -248,7 +244,6 @@ width: 300px;
 }
 .info img{
      width: 50px;
-    transform: translateX(-80%);
 }
 address>span{
     display: inline-block;
@@ -340,6 +335,16 @@ address{
     left: 12%;
 }
 .sns{
-    display: none;
-}
+    display: flex;
+    flex-direction: column;
+    bottom:-250%;
+    text-align: center;
+    }
+
+    .sns li{
+        height: 25px;
+    }
+    
+
+
 }
