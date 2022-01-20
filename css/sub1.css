@@ -5,71 +5,81 @@
 @import url(./common.css);
 @import url(./car360.css);
 
-section>div{
+section>div {
     height: 100%;
 }
 
-.gnb span{
+.gnb span {
     font-size: 16px;
     color: black;
 }
 
-.pt1{
+.pt1 {
     position: relative;
     width: 100%;
     height: 600px;
-    background-color:white;
+    background-color: white;
 }
 
-.mspan{
+.mspan {
     position: relative;
     top: 30%;
     left: 25%;
     font-size: 20px;
     color: black;
 }
-.carInforInner{
-    display:flex;
-    flex-direction:column;
-    position:absolute;
-    top:15%;
-    right:5%;
-    width:250px;
-    text-align:center;
-    z-index:999;
-    background:#a0987e;
-}
-.carInforInner li{
-    width:250px;
-    border:1px solid white;}
-.carInforInner li img{
-    display:block;
-    margin:0 auto 6px;
-    padding-top:20px}
-.inforTit{
-    color:#05141f;
-    font-size:14px}
-.inforTxt{
-    margin-top:5px;
-    color:#05141f;
-    font-size:20px;
-    line-height:23px}
 
-.choice_color{
+.carInforInner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 250px;
+    text-align: center;
+    z-index: 999;
+    background: #a0987e;
+}
+
+.carInforInner li {
+    width: 250px;
+    border: 1px solid white;
+}
+
+.carInforInner li img {
+    display: block;
+    margin: 0 auto 6px;
+    padding-top: 20px
+}
+
+.inforTit {
+    color: #05141f;
+    font-size: 14px
+}
+
+.inforTxt {
+    margin-top: 5px;
+    color: #05141f;
+    font-size: 20px;
+    line-height: 23px
+}
+
+.choice_color {
     position: absolute;
     left: 12%;
     bottom: 25%;
-    height:300px;
+    height: 300px;
     text-align: center;
-    font-size:20px
+    font-size: 20px
 }
 
-.choice_color a{
+.choice_color a {
     display: block;
     height: 50px;
     z-index: 9999;
 }
-.body_color>li{
+
+.body_color>li {
 
     width: 50px;
     height: 50px;
@@ -80,14 +90,14 @@ section>div{
     color: white;
     text-align: center;
     margin: 30px 14px;
-    transition: transform 1s ease-in-out; 
+    transition: transform 1s ease-in-out;
 }
 
-.body_color>li:hover{
+.body_color>li:hover {
     box-shadow: 10px 0 10px #a0987e;
 }
 
-.body_color>li:nth-child(2){
+.body_color>li:nth-child(2) {
 
     width: 50px;
     height: 50px;
@@ -100,7 +110,7 @@ section>div{
     margin: 30px 14px;
 }
 
-.body_color>li:nth-child(3){
+.body_color>li:nth-child(3) {
 
     width: 50px;
     height: 50px;
@@ -113,7 +123,7 @@ section>div{
     margin: 30px 14px;
 }
 
-.pt2{
+.pt2 {
     position: relative;
     /* height: 800px; */
     padding-top: 50%;
@@ -122,14 +132,14 @@ section>div{
     background-size: cover;
 }
 
-.pt2 span:nth-child(1){
+.pt2 span:nth-child(1) {
     position: absolute;
     top: 8%;
     left: 5%;
     font-size: 24px;
 }
 
-.pt2 span:nth-child(3){
+.pt2 span:nth-child(3) {
     position: absolute;
     top: 12%;
     left: 5%;
@@ -137,13 +147,14 @@ section>div{
 }
 
 
-.pt3{
+.pt3 {
     display: flex;
     position: relative;
     /* height: 300px; */
 }
 
-.pt3 span, .pt4 span{
+.pt3 span,
+.pt4 span {
     position: absolute;
     bottom: 0;
     right: 2%;
@@ -151,7 +162,7 @@ section>div{
     color: white;
 }
 
-.pt3>span{
+.pt3>span {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -160,11 +171,12 @@ section>div{
     z-index: 999;
 }
 
-.pt4{
+.pt4 {
     display: flex;
     /* height: 300px; */
 }
-.cbx{
+
+.cbx {
     /* outline: 1px solid red; */
     flex: 1;
     padding-top: 22%;
@@ -172,36 +184,42 @@ section>div{
 
 
 
-.bg1{
+.bg1 {
     position: relative;
     background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_01.png);
     background-size: cover;
 }
-.bg2{
-    position: relative;
-    background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_02.png);
-    background-size: cover;
-}
-.bg3{
-    position: relative;
-    background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_03.png);
-    background-size: cover;
-}
-.bg4{
-    position: relative;
-    background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_04.png);
-    background-size: cover;
-}
-.bg5{
-    position: relative;
-    background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_05.png);
-    background-size: cover;
-}
-.bg6{
-    position: relative;
-    background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_06.png);
-    background-size: cover;}
 
-.pt1-2{
+.bg2 {
+    position: relative;
+    background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_02.png);
+    background-size: cover;
+}
+
+.bg3 {
+    position: relative;
+    background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_03.png);
+    background-size: cover;
+}
+
+.bg4 {
+    position: relative;
+    background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_04.png);
+    background-size: cover;
+}
+
+.bg5 {
+    position: relative;
+    background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_05.png);
+    background-size: cover;
+}
+
+.bg6 {
+    position: relative;
+    background-image: url(../images/EV6/Ev6_22my_pe_interior_detail_06.png);
+    background-size: cover;
+}
+
+.pt1-2 {
     display: none;
 }

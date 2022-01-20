@@ -5,16 +5,16 @@
 @import url(./common.css);
 
 
-#enter{
+#enter {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 999999999;
 }
 
-#enter span{
+#enter span {
     position: relative;
     display: block;
     text-align: center;
@@ -22,18 +22,18 @@
     transition: all 0.5s ease-out;
 }
 
-#enter:hover span{
-    color:black
+#enter:hover span {
+    color: black
 }
 
-#enter span:nth-child(2){
+#enter span:nth-child(2) {
     position: relative;
     top: 150px;
     font-size: 20px;
     color: white;
 }
 
-.bx-controls.bx-has-pager.bx-has-controls-direction{
+.bx-controls.bx-has-pager.bx-has-controls-direction {
     position: absolute;
     top: 0;
     width: 100%;
@@ -41,39 +41,41 @@
     z-index: 99999;
 }
 
-.bxslider{
+.bxslider {
     position: relative;
     height: 100%;
 }
 
-.bxslider li{
+.bxslider li {
     position: relative;
     height: 100%;
 }
 
-.bxslider video{
+.bxslider video {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.bx-viewport{
+
+.bx-viewport {
     height: 100% !important;
 }
 
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
     bottom: 50px;
     z-index: 999;
 }
 
-.bx-controls-direction{
+.bx-controls-direction {
     position: absolute;
     width: 100%;
     height: 100%;
 
 }
 
-.bx-wrapper .bx-prev::before{
+.bx-wrapper .bx-prev::before {
     content: '＜';
     color: white;
     position: absolute;
@@ -86,7 +88,7 @@
     font-size: 30px;
 }
 
-.bx-wrapper .bx-next::before{
+.bx-wrapper .bx-next::before {
     content: '＞';
     color: white;
     position: absolute;
@@ -99,16 +101,16 @@
     font-size: 30px;
 }
 
-.kiaStroy{
+.kiaStroy {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 999999999;
 }
 
-.kiaStroy span{
+.kiaStroy span {
     position: relative;
     display: block;
     text-align: center;
@@ -117,12 +119,12 @@
     color: white;
 }
 
-.kiaStory:hover span{
-    color:black;
+.kiaStory:hover span {
+    color: black;
 }
 
-.kiaStory span:nth-child(2){
-    position: relative; 
+.kiaStory span:nth-child(2) {
+    position: relative;
     top: 150px;
     font-size: 20px;
     color: white;

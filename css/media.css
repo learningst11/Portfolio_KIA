@@ -1,125 +1,131 @@
 @media only screen and (max-width:1024px) {
-    
-#top{
-    height: 80px;
-}
+
+    #top {
+        height: 80px;
+    }
 
 
-.logo {
-    top: 1.5%;
+    .logo {
+        top: 1.5%;
+
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+
+    .gnb li {
+        padding: 0 20px 0px 20px;
+    }
+
+    .gnb a {
+        font-size: 14px;
+    }
+
+    .info img {
+        width: 85px;
+    }
+
+    .sbx img {
+        transform: scale(0.4);
+    }
+
+    .pt1 {
+        display: block;
+        transform: scale(0.6) translateX(-1%);
+        height: 250px;
+    }
+
+    .choice_color {
+        top: -10%;
+        left: 2%;
+    }
+
+    .mspan {
+        top: 5%
+    }
+
+    .carbox {
+        top: -45%;
+    }
+
+    .carInforInner {
+        display: none;
+    }
+
+
+
+    .pt1-2 {
+        display: block;
+    }
+
+    .pt1-2 img {
+        display: block;
+        margin: 0 auto 6px;
+        padding-top: 20px;
+    }
+
+    .pt1-2 ul {
+        display: flex;
+        background-color: #a0987e;
+        text-align: center;
+        word-break: keep-all;
+    }
+
+    .pt1-2 li {
+        flex: 1;
+        border: 1px solid white;
+
+    }
+
+    .pt2 span:nth-child(1) {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        font-size: 19px;
+    }
+
+    .pt2 span:nth-child(3) {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        font-size: 25px;
+    }
+
+    .pt2 span:nth-of-type(3) {
+        position: absolute;
+        top: 25%;
+        right: 3%;
+        font-size: 12px;
+    }
+
+    address {
+        left: 30%;
+    }
+
+    .inforTit {
+        color: #05141f;
+        font-size: 13px
+    }
+
+    .inforTxt {
+        margin-top: 5px;
+        color: #05141f;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .blink {
+        left: 27%;
+    }
+
+    .blink li {
+        padding: 0 20px;
+    }
 
 }
 
-.logo img {
-    width: 70px;
-}
-
-
-.gnb li{
-    padding: 0 20px 0px 20px;
-}
-
-.gnb a{
-    font-size: 14px;
-}
-
-.info img{
-    width: 85px;
-}
-
-.sbx img {
-    transform: scale(0.4);
-}
-
-.pt1 {
-    display: block;
-    transform: scale(0.6) translateX(-1%);
-    height: 250px;
-}
-
-.choice_color{
-    top: -10%;
-    left: 2%;
-}
-
-.mspan{
-    top:5%
-}
-.carbox{
-    top: -45%;
-}
-
-.carInforInner{
-    display: none;
-}
-
-
-
-.pt1-2{
-    display:block;
-}
-.pt1-2 img{
-    display: block;
-    margin: 0 auto 6px;
-    padding-top: 20px;
-}
-.pt1-2 ul{
-    display: flex;
-    background-color: #a0987e;
-    text-align: center;
-    word-break: keep-all;
-}
-
-.pt1-2 li{
-    flex: 1;
-    border:1px solid white;
-    
-}
-.pt2 span:nth-child(1){
-    position: absolute;
-    top: 8%;
-    left: 5%;
-    font-size: 19px;
-}
-
-.pt2 span:nth-child(3){
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    font-size:25px;
-}
-
-.pt2 span:nth-of-type(3){
-    position: absolute;
-    top: 25%;
-    right: 3%;
-    font-size: 12px;
-}
-
-address{
-    left: 30%;
-}
-
-.inforTit{
-    color:#05141f;
-    font-size:13px
-}
-
-.inforTxt{
-    margin-top:5px;
-    color:#05141f;
-    font-size:16px;
-    line-height:23px;
-}
-
-.blink{
-    left: 27%;
-}
-.blink li {
-    padding: 0 20px;
-}
-        
-}
 @media only screen and (max-width:768px) {
 
     .logo {
@@ -127,92 +133,96 @@ address{
 
     }
 
-.logo img {
-    width: 50px;
-}
-
-.gnb li{
-    padding: 0 15px 0px 15px;
-}
-
-.gnb a{
-    font-size: 10px;
-}
-
-.blink li{
-    padding: 0px 20px;
-}
-
-
-.info img{
-    width: 70px;
-}
-
-
-.sbx img {
-    transform: scale(0.3);
-}
-
-.pt1 {
-    display: block;
-    transform: scale(0.5) translateX(-15%);
-    height: 250px;
-}
-
-.pt2 span:nth-child(1){
-    position: absolute;
-    top: 8%;
-    left: 5%;
-    font-size: 16px;
-}
-
-.pt2 span:nth-child(3){
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    font-size: 20px;
-}
-.pt3 span, .pt4 span{
-    position: absolute;
-    bottom: 0;
-    right: 2%;
-    font-size: 11.5px;
-    color: white;
-}
-
-
-.inforTit{
-    color:#05141f;
-    font-size:12px}
-.inforTxt{
-    margin-top:5px;
-    color:#05141f;
-    font-size:14px;
-    line-height:23px;
-}
-
-address{
-    left: 28%;
+    .logo img {
+        width: 50px;
     }
+
+    .gnb li {
+        padding: 0 15px 0px 15px;
+    }
+
+    .gnb a {
+        font-size: 10px;
+    }
+
+    .blink li {
+        padding: 0px 20px;
+    }
+
+
+    .info img {
+        width: 70px;
+    }
+
+
+    .sbx img {
+        transform: scale(0.3);
+    }
+
+    .pt1 {
+        display: block;
+        transform: scale(0.5) translateX(-15%);
+        height: 250px;
+    }
+
+    .pt2 span:nth-child(1) {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        font-size: 16px;
+    }
+
+    .pt2 span:nth-child(3) {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        font-size: 20px;
+    }
+
+    .pt3 span,
+    .pt4 span {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: 11.5px;
+        color: white;
+    }
+
+
+    .inforTit {
+        color: #05141f;
+        font-size: 12px
+    }
+
+    .inforTxt {
+        margin-top: 5px;
+        color: #05141f;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    address {
+        left: 28%;
+    }
+
     .blink li {
         padding: 0 12px;
     }
 
-.sns{
-    right: 2%;
-    bottom: -24%;
-}
-.sns{
-    display: flex;
-    flex-direction: column;
-    bottom:-250%;
-    text-align: center;
+
+    .sns {
+        display: flex;
+        flex-direction: column;
+        right: 2%;
+        bottom: -250%;
+        text-align: center;
+        height: 80px;
     }
 
-    .sns li{
+    .sns li {
         height: 25px;
     }
-    
+
 
 }
 
@@ -223,128 +233,141 @@ address{
 
     }
 
-#top{
-    height: 50px;
+    #top {
+        height: 60px;
     }
 
-address{
-min-width: 382px;
-}
-
-.gnb {
-display: none;
-}
-
-.blink{
-width: 300px;
-}
-
-.blink li{
-     padding: 0px 10px;
-}
-.info img{
-     width: 50px;
-}
-address>span{
-    display: inline-block;
-    height: 50px;
-    font-size: 10px;
-}
-
-.pt2 span:nth-child(1){
-    position: absolute;
-    top: 8%;
-    left: 5%;
-    font-size: 11px;
-}
-
-.pt2 span:nth-child(3){
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    font-size: 20px;
-}
-
-.pt3 span, .pt4 span{
-    position: absolute;
-    bottom: 0;
-    right: 2%;
-    font-size: 11px;
-    color: white;
-}
-
-.pt1 {
-    display: block;
-    transform: scale(0.4) translateX(-45%);
-    height: 250px;
-}
-
-.choice_color{
-    top: -15%;
-    left: 3%;
-}
-
-.mspan{
-    top:10%;
-    left:30%;
-}
-.carbox{
-    top: -45%;
-}
-.pt1-1{
-    display: block;
-}
-.carInforInner{
-    display: none;
-}
-
-.inforTit{
-    color:#05141f;
-    font-size:12px}
-.inforTxt{
-    margin-top:5px;
-    color:#05141f;
-    font-size:14px;
-    line-height:23px
-}
-
-.pt3 span, .pt4 span{
-    position: absolute;
-    bottom: 0;
-    right: 2%;
-    font-size: 11px;
-    color: white;
-}
-
-.pt3>span{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 17px;
-    color: black;
-    z-index: 999;
-}
-address{
-    left: 3%;
+    address {
+        min-width: 382px;
     }
+
+    .gnb {
+        display: none;
+    }
+
+    .blink {
+        width: 300px;
+    }
+
+    .blink li {
+        padding: 0px 10px;
+    }
+
+    .info img {
+        width: 50px;
+    }
+
+    .pt2 span:nth-child(1) {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        font-size: 11px;
+    }
+
+    .pt2 span:nth-child(3) {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        font-size: 20px;
+    }
+
+    .pt3 span,
+    .pt4 span {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: 11px;
+        color: white;
+    }
+
+    .pt1 {
+        display: block;
+        transform: scale(0.4) translateX(-45%);
+        height: 250px;
+    }
+
+    .choice_color {
+        top: -15%;
+        left: 3%;
+    }
+
+    .mspan {
+        top: 10%;
+        left: 30%;
+    }
+
+    .carbox {
+        top: -45%;
+    }
+
+    .pt1-1 {
+        display: block;
+    }
+
+    .carInforInner {
+        display: none;
+    }
+
+    .inforTit {
+        color: #05141f;
+        font-size: 12px
+    }
+
+    .inforTxt {
+        margin-top: 5px;
+        color: #05141f;
+        font-size: 14px;
+        line-height: 23px
+    }
+
+    .pt3 span,
+    .pt4 span {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: 11px;
+        color: white;
+    }
+
+    .pt3>span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 17px;
+        color: black;
+        z-index: 999;
+    }
+
+    #info {
+        height: 32px;
+    }
+
+    address {
+        left: 6%;
+    }
+
     .blink li {
         padding: 0 5px;
     }
 
-.blink{
-    left: 12%;
-}
-.sns{
-    display: flex;
-    flex-direction: column;
-    bottom:-250%;
-    text-align: center;
+    .blink {
+        left: 13%;
     }
 
-    .sns li{
+    .sns {
+        display: flex;
+        flex-direction: column;
+        bottom: -250%;
+        text-align: center;
+    }
+
+    .sns li {
         height: 25px;
     }
-    
 
 
+    address>span {
+        display: inline-block;
+        height: 50px;
+    }
 }
