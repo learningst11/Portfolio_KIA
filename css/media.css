@@ -123,6 +123,13 @@ address>span{
     font-size:16px;
     line-height:23px
 }
+
+address{
+left: 20%;
+}
+.blink li {
+    padding: 0 20px;
+}
         
 }
 @media only screen and (max-width:768px) {
@@ -210,6 +217,13 @@ address>span{
     font-size:14px;
     line-height:23px}
 }
+
+address{
+    left: 20%;
+    }
+    .blink li {
+        padding: 0 20px;
+    }
 
 @media only screen and (max-width:500px) {
 
@@ -318,7 +332,10 @@ address>span{
     color: black;
     z-index: 999;
 }
-
-
-
+address{
+    left: 10%;
+    }
+    .blink li {
+        padding: 0 5px;
+    }
 }
