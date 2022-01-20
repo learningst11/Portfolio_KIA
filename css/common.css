@@ -140,10 +140,10 @@ footer {
 address {
     position: absolute;
     top: -30%;
-    left: 27%;
+    left: 32%;
     color: #747474;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 13px;
     font-style: normal;
     justify-content: space-around;
 }
@@ -164,10 +164,10 @@ address {
 .blink {
     display: flex;
     position: absolute;
-    bottom: -150%;
-    left: 25%;
+    bottom: -175%;
+    left: 27%;
     justify-content: center;
-    font-size: 1.1vw;
+    font-size: 13px;
 }
 
 .blink li {
@@ -176,4 +176,8 @@ address {
 
 .blink a {
     color: #747474;
+}
+
+.media{
+    display: none;
 }
