@@ -28,16 +28,17 @@ section>div{
     font-size: 20px;
     color: black;
 }
-.carInforInner{
-    display:flex; 
-    flex-direction:column; 
-    position:absolute;
-    top:3%;
-    right:5%;
-    width:250px;
-    text-align:center;
-    z-index:999;
-    background:#a0987e}
+.carInforInner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 250px;
+    text-align: center;
+    z-index: 999;
+    background: #a0987e;
+}
 .carInforInner li{
     width:250px;
     border:1px solid white;}
@@ -201,3 +202,7 @@ section>div{
     position: relative;
     background-image:url(../images/K8/K8_06in_w.png);
     background-size: cover;}
+
+    .pt1-2{
+        display: none;
+    }
