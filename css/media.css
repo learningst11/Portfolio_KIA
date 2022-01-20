@@ -35,10 +35,6 @@ address>span{
     width: 85px;
 }
 
-.sns{
-    display: none;
-}
-
 .info{
     height: 24px;
 }
@@ -215,15 +211,21 @@ address>span{
     margin-top:5px;
     color:#05141f;
     font-size:14px;
-    line-height:23px}
+    line-height:23px;
 }
 
 address{
     left: 20%;
     }
     .blink li {
-        padding: 0 20px;
+        padding: 0 12px;
     }
+
+.sns{
+    right: 2%;
+    bottom: -24%;
+}
+}
 
 @media only screen and (max-width:500px) {
 
@@ -314,8 +316,9 @@ address>span{
     margin-top:5px;
     color:#05141f;
     font-size:14px;
-    line-height:23px}
+    line-height:23px
 }
+
 .pt3 span, .pt4 span{
     position: absolute;
     bottom: 0;
@@ -333,9 +336,16 @@ address>span{
     z-index: 999;
 }
 address{
-    left: 10%;
+    left: 3%;
     }
     .blink li {
         padding: 0 5px;
     }
+
+.blink{
+    left: 12%;
+}
+.sns{
+    display: none;
+}
 }
