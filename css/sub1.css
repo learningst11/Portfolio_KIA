@@ -32,12 +32,13 @@ section>div{
     display:flex;
     flex-direction:column;
     position:absolute;
-    top:3%;
+    top:15%;
     right:5%;
     width:250px;
     text-align:center;
     z-index:999;
-    background:#a0987e}
+    background:#a0987e;
+}
 .carInforInner li{
     width:250px;
     border:1px solid white;}
@@ -45,10 +46,10 @@ section>div{
     display:block;
     margin:0 auto 6px;
     padding-top:20px}
-.carInforInnerl li .inforTit{
+.inforTit{
     color:#05141f;
     font-size:14px}
-.carInforInner li .inforTxt{
+.inforTxt{
     margin-top:5px;
     color:#05141f;
     font-size:20px;
@@ -200,3 +201,7 @@ section>div{
     position: relative;
     background-image:url(../images/EV6/Ev6_22my_pe_interior_detail_06.png);
     background-size: cover;}
+
+.pt1-2{
+    display: none;
+}

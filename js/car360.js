@@ -58,8 +58,11 @@ $(() => { /////////// jQB ////////////////////////
 
         // 우리가 사용할 방향은 x축뿐임!
         let pos = e.pageX;
-
-        // console.log("x축:",pos,"/상태:",drag);
+        if(pos===undefined){
+            pos=e.touches[0].clientX;
+        }
+        
+        console.log("x축:",pos,"/상태:",drag);
 
         // 방향알아내기!
         // 클릭시 위치값 - 현재위치값
@@ -72,7 +75,7 @@ $(() => { /////////// jQB ////////////////////////
             // 비?집:놀이동산; (조건연산자)
             // 왼쪽방향 1, 오른쪽방향 0
             // 왼쪽방향이 이미지번호 증가!
-            // console.log("방향:",dir);
+            console.log("방향:",dir);
 
             // 이미지변경함수 호출!
             rotCar(dir);
@@ -86,16 +89,19 @@ $(() => { /////////// jQB ////////////////////////
 
     // 드래그 상태값 변경하기 ///////
     // 마우스버튼을 눌렀을때!
-    cbx.mousedown(function (e) {
+    cbx.on("mousedown touchstart",function (e) {
         // 드래그 상태변경
         drag = 1;
         // x축 위치값 담기
         point = e.pageX;
+        if(point===undefined){
+            point=e.touches[0].clientX;
+        }
         // 커서 주먹
         cbx.css({cursor:"grabbing"});
     }); /////// mousedown /////////
     // 마우스버튼이 올라왔을때+마우스가 나갔을때
-    cbx.on("mouseup mouseout", function (e) {
+    cbx.on("mouseup mouseout touchend", function (e) {
         // 드래그 상태변경
         drag = 0;
         // 커서 손바닥
