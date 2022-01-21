@@ -123,16 +123,19 @@
     .blink li {
         padding: 0 20px;
 
-        
+
     }
+
     .sns {
         display: flex;
         flex-direction: column;
-        bottom: -200%;
+        bottom: -250%;
+        right: 0%;
         text-align: center;
+        width: 80px;
         height: 80px;
     }
-    
+
 
 }
 
@@ -212,12 +215,12 @@
     }
 
     address {
-        left: 20%;
+        left: 22%;
         font-size: 12px;
     }
 
-    .blink{
-        left:22%;
+    .blink {
+        left: 22%;
         font-size: 11px;
         bottom: -200%;
 
@@ -231,7 +234,6 @@
     .sns {
         display: flex;
         flex-direction: column;
-        right: -2%;
         bottom: -250%;
         text-align: center;
         height: 70px;
@@ -241,7 +243,7 @@
         height: 25px;
     }
 
-    .media{
+    .media {
         display: inline;
     }
 
@@ -250,34 +252,47 @@
 
 @media only screen and (max-width:500px) {
 
-    .logo {
-        top: -0.6%;
-
-    }
 
     #top {
         height: 60px;
     }
 
-    address {
-        min-width: 382px;
+    .logo {
+        top: 0.3%;
+        left: 53%;
+    }
+
+    .ham {
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        font-size: 40px;
+    }
+
+    .ham:active .mognb{
+        display: block;
+    }
+
+    .ham:active .ham{
+        display: none;
+
+    }
+
+
+
+    .search {
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: 17px;
+        font-size: 20px;
     }
 
     .gnb {
         display: none;
     }
 
-    .blink {
-        width: 300px;
-    }
-
-    .blink li {
-        padding: 0px 10px;
-    }
-
-    .info img {
-        width: 50px;
-    }
 
     .pt2 span:nth-child(1) {
         position: absolute;
@@ -360,10 +375,25 @@
         z-index: 999;
     }
 
+
+
     address {
         left: 10%;
         font-size: 12px;
     }
+
+    .info img {
+        width: 50px;
+    }
+
+    .blink {
+        width: 300px;
+    }
+
+    .blink li {
+        padding: 0px 10px;
+    }
+
 
     .blink li {
         padding: 0 5px;
@@ -376,7 +406,7 @@
     }
 
     .sns {
-        display: flex;
+        display: none;
         flex-direction: column;
         bottom: -250%;
         text-align: center;
@@ -390,5 +420,9 @@
     address>span {
         display: inline-block;
         height: 50px;
+    }
+
+    address {
+        min-width: 382px;
     }
 }

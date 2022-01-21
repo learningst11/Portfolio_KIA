@@ -2,7 +2,7 @@
 
 #top {
     background-color: black;
-    height: 100px;
+    height: 80px;
 }
 
 .top {
@@ -18,6 +18,14 @@
     top: 2%;
     transform: translateX(-80%) scaleX(1.2);
     z-index: 99999;
+}
+
+.ham, .search{
+    display: none;
+}
+
+.mognb{
+    display: none;
 }
 
 .gnb {
@@ -139,7 +147,7 @@ footer {
 
 address {
     position: absolute;
-    top: -30%;
+    top: -50%;
     left: 32%;
     color: #747474;
     text-align: center;
