@@ -158,40 +158,32 @@
         font-size: 10px;
     }
 
-    .blink li {
-        padding: 0px 20px;
-    }
-
-
-    .info img {
-        width: 60px;
-    }
-
-
+    
+    
     .sbx img {
         transform: scale(0.3);
     }
-
+    
     .pt1 {
         display: block;
         transform: scale(0.5) translateX(-15%);
         height: 250px;
     }
-
+    
     .pt2 span:nth-child(1) {
         position: absolute;
         top: 8%;
         left: 5%;
         font-size: 16px;
     }
-
+    
     .pt2 span:nth-child(3) {
         position: absolute;
         top: 12%;
         left: 5%;
         font-size: 20px;
     }
-
+    
     .pt3 span,
     .pt4 span {
         position: absolute;
@@ -200,37 +192,43 @@
         font-size: 11.5px;
         color: white;
     }
-
-
+    
+    
     .inforTit {
         color: #05141f;
         font-size: 12px
     }
-
+    
     .inforTxt {
         margin-top: 5px;
         color: #05141f;
         font-size: 14px;
         line-height: 23px;
     }
-
+    
     address {
         left: 20%;
         font-size: 12px;
     }
-
+    
     .blink {
         left: 20%;
         font-size: 11px;
         bottom: -200%;
-
+        
     }
-
+    
     .blink li {
+        padding: 0px 20px;
         padding: 0 12px;
     }
 
 
+    .info img {
+        width: 60px;
+    }
+    
+    
     .sns {
         display: flex;
         flex-direction: column;
@@ -374,8 +372,11 @@ g
 
     address {
         left: 15%;
-        height: 85px;
         font-size: 12px;
+    }
+
+    #info{
+        height: 105px;
     }
 
     .info img {
