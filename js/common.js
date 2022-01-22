@@ -13,6 +13,8 @@ function(){
         
         if(window.getComputedStyle(tg).display=="none"){
             tg.style.display="block";
+            tg.style.transition="2s ease-out";
+            
         }
 
         else{

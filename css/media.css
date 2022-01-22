@@ -260,7 +260,7 @@
     #info{
         height:50px
     }
-
+g
     .logo {
         top: 0.3%;
         left: 53%;
@@ -374,6 +374,7 @@
 
     address {
         left: 15%;
+        height: 85px;
         font-size: 12px;
     }
 
@@ -396,7 +397,7 @@
 
     .blink {
         bottom: -100%;
-        left: 22%;
+        left: 18%;
         font-size: 12px;
     }
 
@@ -421,6 +422,6 @@
     }
 
     address {
-        min-width: 382px;
+        /* min-width: 382px; */
     }
 }
