@@ -312,7 +312,7 @@ g
 
     .pt1 {
         display: block;
-        transform: scale(0.4) translateX(-45%);
+        transform: scale(0.4) translateX(-55%);
         height: 250px;
     }
 
@@ -397,13 +397,13 @@ g
     }
 
     .blink {
-        bottom: -100%;
+        bottom: -200%;
         left: 18%;
         font-size: 12px;
     }
 
     .sns {
-        bottom: -300%;
+        bottom:-380%;
         right: 36%;
         display: flex;
         flex-direction: row;

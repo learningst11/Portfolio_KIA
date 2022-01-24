@@ -35,7 +35,6 @@
     text-align:left;
     z-index: 9999999999;
     display: none;
-    box-sizing: border-box;
 }
 .mognb{
     padding-left: 15px;
@@ -56,12 +55,10 @@
 }
 
 .smenu li{
-    box-shadow: inset 94px 0px 60px -42px #a0987e, 0px 0px 0px 2px #a0987e
+    box-shadow: inset 94px 0px 60px -42px #a0987e, 0px 0px 0px 2px #a0987e;
+    
 }
 
-.smenu li:nth-child(3){
-    border-bottom: none;
-}
 .smenu a{
     font-size:15px;
 }
