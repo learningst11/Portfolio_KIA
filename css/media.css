@@ -397,14 +397,14 @@ g
     }
 
     .blink {
-        bottom: -200%;
+        bottom: -150%;
         left: 18%;
         font-size: 12px;
     }
 
     .sns {
-        bottom:-380%;
-        right: 36%;
+        bottom:-350%;
+        right: 40%;
         display: flex;
         flex-direction: row;
         width: 100px;
