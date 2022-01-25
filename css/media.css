@@ -432,4 +432,16 @@ g
     .minput label{
         width: 100px;
     }
+
+    #meminfo{
+        width: 460px;
+    }
+
+    #meminfo label{
+        width: 120px;
+    }
+
+    #mpw2,#mnm{
+        width: 165px;
+    }
 }

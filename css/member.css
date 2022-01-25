@@ -86,7 +86,6 @@ select:focus {
 /* 입력박스공통 */
 #meminfo input[type=text],
 #meminfo input[type=password] {
-    width: 340px;
     height: 36px;
     font-size: 1.125rem;
     /* 18px */
@@ -169,4 +168,8 @@ select:focus {
     background-image: linear-gradient(to bottom, #ddd, #555);
     margin: 0 20px;
     cursor: pointer;
+}
+
+.memberbr{
+    display: none;
 }
