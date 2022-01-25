@@ -312,16 +312,18 @@ g
 
     .pt1 {
         display: block;
-        transform: scale(0.4) translateX(-55%);
+        transform: scale(0.35) translateX(-55%);
         height: 250px;
     }
 
     .choice_color {
+        font-size: 30px;
         top: -15%;
         left: 3%;
     }
 
     .mspan {
+        font-size: 30px;
         top: 10%;
         left: 30%;
     }
