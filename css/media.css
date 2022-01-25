@@ -422,4 +422,14 @@ g
         height: 50px;
     }
 
+    #login{
+        width: 460px;
+    }
+    #mid, #mpw{
+        width: 165px;
+    }
+
+    .minput label{
+        width: 100px;
+    }
 }
