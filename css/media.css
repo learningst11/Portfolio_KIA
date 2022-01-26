@@ -5,11 +5,6 @@
     }
 
 
-    .logo {
-        top: 1.5%;
-
-    }
-
     .logo img {
         width: 80px;
     }
@@ -38,16 +33,17 @@
     }
 
     .choice_color {
-        top: -10%;
+        top: -14%;
         left: 2%;
     }
 
     .mspan {
-        top: 5%
+        top: 114%;
+        font-size: 25px;
     }
 
     .carbox {
-        top: -45%;
+        top: -55%;
     }
 
     .carInforInner {
@@ -141,10 +137,6 @@
 
 @media only screen and (max-width:768px) {
 
-    .logo {
-        top: 1%;
-
-    }
 
     .logo img {
         width: 60px;
@@ -168,6 +160,11 @@
         display: block;
         transform: scale(0.5) translateX(-15%);
         height: 250px;
+    }
+
+    .mspan{
+        top: 122%;
+        left: 60%;
     }
     
     .pt2 span:nth-child(1) {
@@ -258,9 +255,9 @@
     #info{
         height:50px
     }
-g
+
     .logo {
-        top: 0.3%;
+        top: 0;
         left: 53%;
     }
 
@@ -323,8 +320,8 @@ g
 
     .mspan {
         font-size: 30px;
-        top: 10%;
-        left: 30%;
+        top: 142%;
+        left: 100%;
     }
 
     .carbox {
