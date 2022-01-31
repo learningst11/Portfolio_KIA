@@ -125,3 +125,58 @@ div.KiaStory span:nth-child(2) {
     font-size: 20px;
     color: white;
 }
+
+
+
+
+/* copy */
+.slide-container{
+    display: flex;
+    width: 300vw;
+    
+}
+
+.slide-box{
+    width: 100vw;
+    height: calc(100vh - 200px);
+
+}
+
+.slide-box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-prev{
+    position: absolute;
+    top: 48%;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 60%;
+    cursor: pointer;
+}
+.slide-next{
+    position: absolute;
+    top: 48%;
+    right:10px;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.transforming{
+    transition: transform 0.5s;
+}

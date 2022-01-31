@@ -14,7 +14,30 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
-    <script src="./js/slider.js"></script>
+    <script>
+        $(function () {
+
+            const mytxt = [
+                '<a href="sub3.html">궁금한 그곳으로, 나를 Discover your world The all-new Sportage &gt;</a>',
+                '<a href="sub1.html">내일을 위한 여정의 시작, The Kia EV6 &gt;</a>',
+                '<a href="sub2.html">영감은 낯선 것으로부터, The Outstanding, The Kia K8 &gt;</a>'
+            ];
+            // bxSlider 적용하기
+            let mybx = $(".bxslider").bxSlider({
+                auto: true, // 자동넘기기설정(true/false)
+                pause: 8000, // 슬라이드 넘기기 사이간격(초)
+                speed: 600, //슬라이드 넘어가는 속도(초)
+                mode: 'horizontal', //넘기기 방식옵션
+                //'horizontal', 'vertical', 'fade'
+                onSlideBefore:function(ele,odx,ndx){
+                    // odx-이전순번, ndx다음순번
+                    console.log(ndx);
+                    $("#enter a").html(mytxt[ndx]);
+                }
+            });
+
+
+        }); //jQb
     </script>
 
 </head>
@@ -85,20 +108,12 @@
     </div>
 
     <!-- 2.메인영역 -->
-    <div style="overflow: hidden;">
-        <div class="slide-container transforming">
-            <div class="slide-box">
-                <video src="./images/Sportage/web_sportage_kv.webm" autoplay muted loop playsinline></video>
-            </div>
-            <div class="slide-box transforming">
-                <video src="./images/EV6/sec1_bg.webm" autoplay muted loop playsinline></video>
-            </div>
-            <div class="slide-box transforming">
-                <video src="./images/K8/section0-bg-1.webm" autoplay muted loop playsinline></video>
-            </div>
-        </div>
-        <button class="slide-prev"><</button>
-        <button class="slide-next">></button>
+    <main>
+        <ul class="bxslider">
+            <li><video src="./images/Sportage/web_sportage_kv.webm" autoplay muted loop playsinline></video></li>
+            <li><video src="./images/EV6/sec1_bg.webm" autoplay muted loop playsinline></video></li>
+            <li><video src="./images/K8/section0-bg-1.webm" autoplay muted loop playsinline></video></li>
+        </ul>
         <h1 id="enter">
             <a href="./sub3.html">
                 <span>
@@ -107,10 +122,7 @@
                     The all-new Sportage ></span>
             </a>
         </h1>
-    </div>
-
-    
-    
+    </main>
     <!-- 3.하단영역 -->
     <div id="info">
         <footer class="info ibx">

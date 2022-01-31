@@ -23,8 +23,8 @@ section>div {
 
 .mspan {
     position: relative;
-    top: 30%;
-    left: 25%;
+    top: 86%;
+    left: 45%;
     font-size: 20px;
     color: black;
 }
@@ -33,7 +33,7 @@ section>div {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 18%;
+    top: 14%;
     right: 5%;
     width: 250px;
     text-align: center;
