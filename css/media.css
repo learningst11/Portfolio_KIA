@@ -135,7 +135,7 @@
 
 }
 
-/* @media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
 
 
     .logo img {
@@ -243,413 +243,199 @@
     }
 
 
-} */
-@media only screen and (max-width:768px){
-    #top {
-        height: 60px;
-    }
-
-    #info{
-        height:50px
-    }
-
-    .logo {
-        top: 0;
-        left: 53%;
-    }
-
-    .ham {
-        display: block;
-        position: absolute;
-        top: 4px;
-        left: 10px;
-        font-size: 40px;
-        color: white;
-    }
-
-
-    .search {
-        display: block;
-        position: absolute;
-        top: 19px;
-        right: 17px;
-        font-size: 20px;
-    }
-
-    .gnb {
-        display: none;
-    }
-
-
-    .pt2 span:nth-child(1) {
-        position: absolute;
-        top: 8%;
-        left: 5%;
-        font-size: 11px;
-    }
-
-    .pt2 span:nth-child(3) {
-        position: absolute;
-        top: 12%;
-        left: 5%;
-        font-size: 20px;
-    }
-
-    .pt3 span,
-    .pt4 span {
-        position: absolute;
-        bottom: 0;
-        right: 2%;
-        font-size: 11px;
-        color: white;
-    }
-
-    .pt1 {
-        display: block;
-        transform: scale(0.35) translateX(-55%);
-        height: 250px;
-    }
-
-    .choice_color {
-        font-size: 30px;
-        top: -15%;
-    }
-
-    .mspan {
-        font-size: 30px;
-        top: 142%;
-        left: 100%;
-    }
-
-    .carbox {
-        top: -45%;
-    }
-
-    .pt1-1 {
-        display: block;
-    }
-
-    .carInforInner {
-        display: none;
-    }
-
-    .inforTit {
-        color: #05141f;
-        font-size: 12px
-    }
-
-    .inforTxt {
-        margin-top: 5px;
-        color: #05141f;
-        font-size: 14px;
-        line-height: 23px
-    }
-
-    .pt3 span,
-    .pt4 span {
-        position: absolute;
-        bottom: 0;
-        right: 2%;
-        font-size: 11px;
-        color: white;
-    }
-
-    .pt3>span {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 17px;
-        color: black;
-        z-index: 999;
-    }
-
-    address {
-        left: 23%;
-        font-size: 13px;
-    }
-
-    #info{
-        height: 105px;
-    }
-
-    .info img {
-        width: 50px;
-    }
-
-    .blink {
-        width: 350px;
-        bottom: -140%;
-        left: 23%;
-        font-size: 13px;
-    }
-
-    .blink li {
-        padding: 0 5px;
-    }
-
-    .sns {
-        display: flex;
-        flex-direction: row;
-        bottom:-350%;
-        left: 40%;
-        text-align: center;
-        width: 100px;
-        height: 20px;
-    }
-
-    .sns li {
-        width: 50px;
-        height: 25px;
-    }
-
-
-    address>span {
-        display: inline-block;
-        height: 50px;
-    }
-
-    #login{
-        width: 460px;
-    }
-    #mid, #mpw{
-        width: 165px;
-    }
-
-    .minput label{
-        width: 100px;
-    }
-
-    #meminfo{
-        width: 460px;
-    }
-
-    #meminfo label{
-        width: 120px;
-    }
-
-    #mpw2,#mnm{
-        width: 165px;
-    }
-
-    .carbox{
-        left:24%;
-    }
-
-    .blink-sns{
-        left: 50%;
-    }
-}
-}
-
-@media only screen and (max-width:768px) and (orientation:landscape) {
-
-
-    #top {
-        height: 60px;
-    }
-
-    #info{
-        height:50px
-    }
-
-    .logo {
-        top: 0;
-        left: 53%;
-    }
-
-    .ham {
-        display: block;
-        position: absolute;
-        top: 4px;
-        left: 10px;
-        font-size: 40px;
-        color: white;
-    }
-
-
-    .search {
-        display: block;
-        position: absolute;
-        top: 19px;
-        right: 17px;
-        font-size: 20px;
-    }
-
-    .gnb {
-        display: none;
-    }
-
-
-    .pt2 span:nth-child(1) {
-        position: absolute;
-        top: 8%;
-        left: 5%;
-        font-size: 11px;
-    }
-
-    .pt2 span:nth-child(3) {
-        position: absolute;
-        top: 12%;
-        left: 5%;
-        font-size: 20px;
-    }
-
-    .pt3 span,
-    .pt4 span {
-        position: absolute;
-        bottom: 0;
-        right: 2%;
-        font-size: 11px;
-        color: white;
-    }
-
-    .pt1 {
-        display: block;
-        transform: scale(0.35) translateX(-55%);
-        height: 250px;
-    }
-
-    .choice_color {
-        font-size: 30px;
-        top: -15%;
-    }
-
-    .mspan {
-        font-size: 30px;
-        top: 142%;
-        left: 100%;
-    }
-
-    .carbox {
-        top: -45%;
-    }
-
-    .pt1-1 {
-        display: block;
-    }
-
-    .carInforInner {
-        display: none;
-    }
-
-    .inforTit {
-        color: #05141f;
-        font-size: 12px
-    }
-
-    .inforTxt {
-        margin-top: 5px;
-        color: #05141f;
-        font-size: 14px;
-        line-height: 23px
-    }
-
-    .pt3 span,
-    .pt4 span {
-        position: absolute;
-        bottom: 0;
-        right: 2%;
-        font-size: 11px;
-        color: white;
-    }
-
-    .pt3>span {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 17px;
-        color: black;
-        z-index: 999;
-    }
-
-    address {
-        left: 23%;
-        font-size: 13px;
-    }
-
-    #info{
-        height: 105px;
-    }
-
-    .info img {
-        width: 50px;
-    }
-
-    .blink {
-        width: 350px;
-        bottom: -140%;
-        left: 23%;
-        font-size: 13px;
-    }
-
-    .blink li {
-        padding: 0 5px;
-    }
-
-    .sns {
-        display: flex;
-        flex-direction: row;
-        bottom:-350%;
-        left: 40%;
-        text-align: center;
-        width: 100px;
-        height: 20px;
-    }
-
-    .sns li {
-        width: 50px;
-        height: 25px;
-    }
-
-
-    address>span {
-        display: inline-block;
-        height: 50px;
-    }
-
-    #login{
-        width: 460px;
-    }
-    #mid, #mpw{
-        width: 165px;
-    }
-
-    .minput label{
-        width: 100px;
-    }
-
-    #meminfo{
-        width: 460px;
-    }
-
-    #meminfo label{
-        width: 120px;
-    }
-
-    #mpw2,#mnm{
-        width: 165px;
-    }
-
-    .carbox{
-        left:24%;
-    }
-
-    .blink-sns{
-        left: 50%;
-    }
 }
 
 @media only screen and (max-width:500px) {
+
+
+    #top {
+        height: 60px;
+    }
+
+    #info{
+        height:50px
+    }
+
+    .logo {
+        top: 0;
+        left: 53%;
+    }
+
+    .ham {
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        font-size: 40px;
+        color: white;
+    }
+
+
+    .search {
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: 17px;
+        font-size: 20px;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+
+    .pt2 span:nth-child(1) {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        font-size: 11px;
+    }
+
+    .pt2 span:nth-child(3) {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        font-size: 20px;
+    }
+
+    .pt3 span,
+    .pt4 span {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: 11px;
+        color: white;
+    }
+
+    .pt1 {
+        display: block;
+        transform: scale(0.35) translateX(-55%);
+        height: 250px;
+    }
+
+    .choice_color {
+        font-size: 30px;
+        top: -15%;
+    }
+
+    .mspan {
+        font-size: 30px;
+        top: 142%;
+        left: 100%;
+    }
+
+    .carbox {
+        top: -45%;
+    }
+
+    .pt1-1 {
+        display: block;
+    }
+
+    .carInforInner {
+        display: none;
+    }
+
+    .inforTit {
+        color: #05141f;
+        font-size: 12px
+    }
+
+    .inforTxt {
+        margin-top: 5px;
+        color: #05141f;
+        font-size: 14px;
+        line-height: 23px
+    }
+
+    .pt3 span,
+    .pt4 span {
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        font-size: 11px;
+        color: white;
+    }
+
+    .pt3>span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 17px;
+        color: black;
+        z-index: 999;
+    }
+
     address {
         left: 15%;
         font-size: 2.5vw;
     }
 
+    #info{
+        height: 105px;
+    }
+
+    .info img {
+        width: 50px;
+    }
+
     .blink {
         width: 300px;
         bottom: -140%;
-        left: 15%;
+        left: 14%;
         font-size: 2vw;
     }
+
+    .blink li {
+        padding: 0 5px;
+    }
+
+    .sns {
+        display: flex;
+        flex-direction: row;
+        bottom:-350%;
+        left: 40%;
+        text-align: center;
+        width: 100px;
+        height: 20px;
+    }
+
+    .sns li {
+        height: 25px;
+    }
+
+
+    address>span {
+        display: inline-block;
+        height: 50px;
+    }
+
+    #login{
+        width: 460px;
+    }
+    #mid, #mpw{
+        width: 165px;
+    }
+
+    .minput label{
+        width: 100px;
+    }
+
+    #meminfo{
+        width: 460px;
+    }
+
+    #meminfo label{
+        width: 120px;
+    }
+
+    #mpw2,#mnm{
+        width: 165px;
+    }
+
+    .carbox{
+        left:24%;
+    }
+
 
 }
