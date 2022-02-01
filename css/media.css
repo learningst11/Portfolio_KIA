@@ -135,7 +135,7 @@
 
 }
 
-@media only screen and (max-width:768px) {
+/* @media only screen and (max-width:768px) {
 
 
     .logo img {
@@ -243,9 +243,9 @@
     }
 
 
-}
+} */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:768px) {
 
 
     #top {
@@ -366,11 +366,9 @@
         z-index: 999;
     }
 
-
-
     address {
-        left: 15%;
-        font-size: 2.5vw;
+        left: 23%;
+        font-size: 13px;
     }
 
     #info{
@@ -382,35 +380,28 @@
     }
 
     .blink {
-        width: 300px;
+        width: 350px;
+        bottom: -140%;
+        left: 23%;
+        font-size: 13px;
     }
-
-    .blink li {
-        padding: 0px 10px;
-    }
-
 
     .blink li {
         padding: 0 5px;
     }
 
-    .blink {
-        bottom: -140%;
-        left: 14%;
-        font-size: 2vw;
-    }
-
     .sns {
-        bottom:-350%;
-        right: 40%;
         display: flex;
         flex-direction: row;
-        width: 100px;
+        bottom:-350%;
+        left: 40%;
         text-align: center;
+        width: 100px;
         height: 20px;
     }
 
     .sns li {
+        width: 50px;
         height: 25px;
     }
 
@@ -446,4 +437,23 @@
     .carbox{
         left:24%;
     }
+
+    .blink-sns{
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    address {
+        left: 15%;
+        font-size: 2.5vw;
+    }
+
+    .blink {
+        width: 300px;
+        bottom: -140%;
+        left: 15%;
+        font-size: 2vw;
+    }
+
 }
