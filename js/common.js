@@ -12,15 +12,17 @@ function(){
         console.log("디스플레이:",window.getComputedStyle(tg).display);
         
         if(window.getComputedStyle(tg).display=="none"){
-            tg.style.display="block";
-            tg.style.transition="2s ease-out";
-            
+            tg.style.display="block";            
         }
-
         else{
             tg.style.display="none";
         }
 
     };////////click///////////////
+
+    document.querySelector('.model').onclick=
+    function(e){
+        e.prevendDefault();
+    }
 });
 
