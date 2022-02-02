@@ -43,7 +43,7 @@
 
 .mognb a{
     display: inline-block;
-    width: 450px;
+    width: 100%;
     font-size: 17px;
     line-height: 2;
     color: black;
@@ -51,7 +51,7 @@
 
 .smenu{
     padding-left: 30px;
-    width: 93%;
+    width: 90%;
     background-color:darkgrey;
     padding-right: -30px;
 }

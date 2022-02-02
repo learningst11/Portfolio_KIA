@@ -2,8 +2,6 @@ window.addEventListener("DOMContentLoaded",
 function(){
     console.log("로딩완료");
 
-    //1.햄버거 버튼 클릭시
-    //대상:.ham
     document.querySelector(".ham").onclick=
     function(){
         console.log("햄버거");
@@ -18,7 +16,7 @@ function(){
             tg.style.display="none";
         }
 
-    };////////click///////////////
+    };
 
     document.querySelector('.model').onclick=
     function(e){
