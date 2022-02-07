@@ -6,6 +6,11 @@
 @import url(common.css);
 
 /* 서브 전체박스 */
+
+#cont{
+    height: calc(100vh - 200px);
+}
+
 .scont{
     margin-bottom: 100px;
 }
