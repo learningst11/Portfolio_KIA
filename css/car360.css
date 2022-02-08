@@ -1,23 +1,18 @@
 @charset "utf-8";
 
-       /* 자동차박스 */
     .carbox {
         position: relative;
-        /* 가상요소의 부모자격 */
         top: 12%;
         width: 960px;
         height: 500px;
         margin: 0 auto;
               
         user-select: none;
-        /* 선택안되게함 */
         -webkit-user-drag: none;
-        /* 드래그안되게함 */
 
         cursor: grab;
-        /* 손바닥 */
+        z-index: 9999;
     }
-    /* 이미지와 분리커버 가상요소로 만들기! */
     .carbox::after{
         content: '';
         display: block;
@@ -30,6 +25,5 @@
 
     .carbox img {
         position: absolute;
-        /* 앱솔은 모두 block으로 변환됨! */
         
     }

@@ -26,13 +26,11 @@
     margin-top: 20px;
     border: 2px solid #737373;
     border-radius: 10px;
-
-    box-sizing: border-box;/* 크기유지 */
+    box-sizing: border-box;
     padding: 60px 15px;
 }
 .minput label{
     display: inline-block;
-    /* 디자인적용과 한줄에 오게함! */
     width: 150px;
     font-size: 20px;
     font-weight: bold;

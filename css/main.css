@@ -4,6 +4,10 @@
 @import url(./core.css);
 @import url(./common.css);
 
+#cont{
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
 
 #enter {
     position: absolute;
@@ -33,74 +37,6 @@
     color: white;
 }
 
-.bx-controls.bx-has-pager.bx-has-controls-direction {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-}
-
-.bxslider {
-    position: relative;
-    height: 100%;
-}
-
-.bxslider li {
-    position: relative;
-    height: 100%;
-}
-
-.bxslider video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.bx-viewport {
-    height: 100% !important;
-}
-
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
-    bottom: 50px;
-    z-index: 999;
-}
-
-.bx-controls-direction {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-}
-
-.bx-wrapper .bx-prev::before {
-    content: '＜';
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    /* outline: 1px solid red; */
-    text-indent: 0;
-    font-size: 30px;
-}
-
-.bx-wrapper .bx-next::before {
-    content: '＞';
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    /* outline: 1px solid red; */
-    text-indent: 0;
-    font-size: 30px;
-}
-
 .KiaStory {
     position: absolute;
     top: 50%;
@@ -126,10 +62,6 @@ div.KiaStory span:nth-child(2) {
     color: white;
 }
 
-
-
-
-/* copy */
 .slide-container{
     display: flex;
     width: 300vw;

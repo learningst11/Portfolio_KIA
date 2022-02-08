@@ -4,11 +4,9 @@
         height: 80px;
     }
 
-
     .logo img {
         width: 80px;
     }
-
 
     .gnb li {
         padding: 0 20px 0px 20px;
@@ -49,8 +47,6 @@
     .carInforInner {
         display: none;
     }
-
-
 
     .pt1-2 {
         display: block;

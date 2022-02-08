@@ -11,7 +11,6 @@
     text-align: center;
 }
 
-
 .logo {
     position: absolute;
     left: 50%;
@@ -23,8 +22,6 @@
 .ham, .search{
     display: none;
 }
-
-
 
 #mobx{
     position: absolute;
@@ -94,7 +91,6 @@
     box-sizing: border-box;
     padding: 0 45px 0px 45px;
     z-index: 999999;
-
 }
 
 .sbx {
@@ -106,7 +102,6 @@
     height: 0;
     overflow: hidden;
     transition: height 1s ease-in-out;
-
 }
 
 .sbx img {

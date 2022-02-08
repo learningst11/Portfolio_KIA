@@ -70,13 +70,13 @@ section>div {
     bottom: 25%;
     height: 300px;
     text-align: center;
-    font-size: 20px
+    font-size: 20px;
+    z-index: 99999;
 }
 
 .choice_color a {
     display: block;
     height: 50px;
-    z-index: 9999;
 }
 
 .body_color>li {
