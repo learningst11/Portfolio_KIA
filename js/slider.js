@@ -1,6 +1,9 @@
+//메인페이지 차량주행영상 슬라이더 js파일입니다.
 $(() => {
+    //현재 화면에 보여지고 있는 영상 번호 (1~3)
     let currentVideo = 1;
 
+    //오른쪽 화살표 버튼
     $('.slide-next').click(function () {
 
         if (currentVideo == 1) {
@@ -22,7 +25,8 @@ $(() => {
         } 
 
     });
-    // console.log(currentVideo);
+
+    //왼쪽 화살표 버튼
     $('.slide-prev').click(function () {
        if (currentVideo == 2) {
             $('.slide-container').css('transform', 'translateX(+0vw)');

@@ -1,13 +1,13 @@
+//모바일용 GNB메뉴 열고 닫기 js파일입니다.
+
 window.addEventListener("DOMContentLoaded",
 function(){
     console.log("로딩완료");
 
     document.querySelector(".ham").onclick=
     function(){
-        console.log("햄버거");
 
         var tg=document.querySelector("#mobx");
-        console.log("디스플레이:",window.getComputedStyle(tg).display);
         
         if(window.getComputedStyle(tg).display=="none"){
             tg.style.display="block";            
