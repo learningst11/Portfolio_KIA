@@ -1,5 +1,5 @@
 # KIA공식홈페이지 리뉴얼 프로젝트
->https://learningst11.github.io/Portfolio_KIA/
+>https://learningst11.github.io/Portfolio_KIA/site
 
 <br>
 
