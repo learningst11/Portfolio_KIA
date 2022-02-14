@@ -10,7 +10,7 @@
 - Javascript
 - jQuery
 - Media Query
-- Github<br><br>
+- Git,GitHub<br><br>
 ## 3. 기존 공식홈페이지 분석 & 리뉴얼 기획의도
 기존 다량의 컨텐츠 및 이미지가 과도한 스크롤 생성하여 사용성 및 사용자의 핵심정보 파악을 방해.<br>
 →<br>
